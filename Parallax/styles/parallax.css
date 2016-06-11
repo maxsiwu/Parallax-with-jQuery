@@ -1,0 +1,97 @@
+@charset "utf-8";
+
+header {
+	position: fixed;
+	background-color: black;
+	border-bottom: black;
+	width: 100%;
+	left: 0;
+	top: 0; 
+	z-index: 100;	
+}
+
+h1 {
+	font-family: Arial, sans-serif;
+	margin-left: 25px;
+	font-size: 2em;
+	color: white;	
+}
+
+h2 {
+	font-size: 1.4em;	
+} 
+
+main {
+	width: 960px;
+	min-height: 1600px;
+	margin: 0 auto;
+	background: url("../images/bg.png") no-repeat;
+}
+
+#content1,
+#content2,
+#content3 {
+	position: absolute;
+	margin-left: 25px;
+	font-family: Arial, sans-serif;
+	width: 100%;
+	z-index: 50;
+	padding: 30px;
+	background-color: rgba(255,255,255,0.7);	
+}
+
+#content1 {
+	top: 180px;	
+}
+
+#content2 {
+	top: 1000px;	
+}
+
+#image1,
+#image2,
+#image3 {
+	position: fixed;	
+}
+
+#image1 {
+	z-index: 3;
+	left: 160px;
+	top: 280px;		
+}
+
+#image2 {
+	z-index: 2;
+	left:500px;
+	top: 700px; 	
+}
+
+#image3 {
+	z-index: 1;
+	left: 300px;
+	top: 902px;	
+}
+
+.triangle1,
+.triangle2,
+.triangle3 {
+	width: 0;
+	height: 0;
+	border-top: 150px solid transparent;
+	border-left: 300px solid #23C0D9;
+	border-bottom: 150px solid transparent;
+}
+
+.triangle2 {
+	border-top: 80px solid transparent;
+	border-left: 160px solid black;
+	border-bottom: 80px solid transparent;
+	transform: rotate(40deg);
+}
+
+.triangle3 {
+	border-top: 100px solid transparent;
+	border-left: 200px solid white;
+	border-bottom: 100px solid transparent;
+	transform: rotate(20deg);
+}
